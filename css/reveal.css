@@ -1609,3 +1609,9 @@ body {
   .slide-menu-wrapper .slide-menu-overlay.active {
     opacity: 0 !important;
   }
+
+
+  .slides {
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
