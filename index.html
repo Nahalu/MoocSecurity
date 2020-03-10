@@ -69,6 +69,19 @@
       // - https://github.com/hakimel/reveal.js#configuration
       // - https://github.com/hakimel/reveal.js#dependencies
       Reveal.initialize({
+	// The "normal" size of the presentation, aspect ratio will be preserved
+	// when the presentation is scaled to fit different resolutions. Can be
+	// specified using percentage units.
+		width: 1900,
+		height: 1800,
+		
+		// Factor of the display size that should remain empty around the content
+		margin: 0.1,
+		
+		// Bounds for smallest/largest possible scale to apply to content
+		minScale: 0.2,
+		maxScale: 1.5,
+
         hash: true,
         menu: {
 		// Specifies which side of the presentation the menu will 
@@ -111,6 +124,7 @@
 		// providing an array of objects with 'title', 'icon'
 		// properties, and either a 'src' or 'content' property.
 		custom: false,
+		
 
 		// Specifies the themes that will be available in the themes
 		// menu panel. Set to 'true' to show the themes menu panel
