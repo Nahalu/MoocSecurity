@@ -1,4 +1,4 @@
-# Defining the Storage
+## Defining the Storage
 
 Create a stick table by adding a **stick-table** directive to a **backend** or **frontend**.  
 In the following example, we use a placeholder backend named per_ip_rates. Dedicating  

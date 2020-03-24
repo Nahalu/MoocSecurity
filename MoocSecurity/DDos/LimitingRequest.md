@@ -1,4 +1,4 @@
-# Limiting Request Rates
+## Limiting Request Rates
 
 Let’s say that you wanted to block any client making more than 10 requests per second. The http_req_rate(10s) counter that you added will report the number of requests over 10 seconds. So, to cap requests at 10 per second, set the limit to 100.
 
@@ -9,8 +9,10 @@ In the following example, we add the http-request deny directive to reject clien
 This rule instructs HAProxy to deny all requests coming from IP addresses whose stick table counters are showing a request rate of over 10 per second. When any IP address exceeds that limit, it will receive an HTTP 429 Too Many Requests response and the request won’t be passed to any HAProxy backend server.
 These requests will be easy to spot in the HAProxy access log, as they will have a termination state of PR–, which means that the session was aborted because of a connection limit enforcement:
 
+```python
 Feb 8 17:15:07 localhost hapee-lb[19738]: 192.168.1.2:49528 [08/Feb/2018:17:15:07.182] fe_main fe_main/<NOSRV> 0/-1/-1/-1/0 429 188 - - PR-- 0/0/0/0/0 0/0 "GET / HTTP/1.1"
-view raw
+```
+
 If you’d like to define rate limit thresholds on a per URI basis, you can do so by adding a map file that pairs each rate limit with a URL path. See our blog post Introduction to HAProxy Maps for an example.
 
 Maybe you’d like to rate limit POST requests only? It’s simple to do by adding a statement that checks the built-in ACL, METH_POST.

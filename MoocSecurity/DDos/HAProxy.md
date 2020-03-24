@@ -1,4 +1,4 @@
-# HAProxy
+## HAProxy
 
 The ideal place to stop an HTTP flood is at the edge of your network. Stopping threats here protects your upstream web applications by minimizing the traffic and system load that could impact them, as well as other sites and services running on those servers. It also prevents unnecessary confusion during attack identification by drawing a clear frontline to the battle.
 
