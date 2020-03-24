@@ -27,6 +27,7 @@ body {
   font-size: 42px;
   font-weight: normal;
   color: #fff;
+  overflow-y: auto;
 }
 
 ::selection {
@@ -304,6 +305,7 @@ body {
   *********************************************/
 .reveal .controls {
   color: #42affa;
+  position: fixed;
 }
 
 /*********************************************
@@ -312,6 +314,7 @@ body {
 .reveal .progress {
   background: rgba(0, 0, 0, 0.2);
   color: #42affa;
+  visibility: hidden;
 }
 
 .reveal .progress span {
@@ -342,7 +345,7 @@ img {
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
   height: 10px;
 }
 
