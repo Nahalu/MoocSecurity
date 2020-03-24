@@ -7,13 +7,13 @@ places throughout your configuration.
 
 _Consider the following example:_
 
-![Alt Text](../assets/storage.png)
+![Alt Text](../assets/DDos/storage.png)
 
 This sets up the storage that will keep track of your clients by their IP addresses. It initializes a counter that tracks each user’s request rate.
 
 _Begin tracking a client by adding an **http-request track-sc0** directive to a **frontend** section, as shown:_
 
-![Alt Text](../assets/frontend.png)
+![Alt Text](../assets/DDos/frontend.png)
 
 With this configuration in place, all clients visiting your website through HAProxy via the **fe_mywebsite** frontend will be stored  
 in the **per_ip_rates stick table.** All of the counters specified in the stick table definition will be automatically maintained and updated by HAProxy
