@@ -1604,14 +1604,3 @@ body {
 
 .zoomed .reveal .roll span:after {
   visibility: hidden; }
-
-
-  .slide-menu-wrapper .slide-menu-overlay.active {
-    opacity: 0 !important;
-  }
-
-
-  .slides {
-    overflow-y: auto;
-    overflow-x: hidden;
-  }
