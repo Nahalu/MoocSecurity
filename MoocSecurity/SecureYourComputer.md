@@ -1,4 +1,4 @@
-# First step : Choosing a password
+# Securing your computer
 
 ## Why a password for your computer ?
 
@@ -9,13 +9,13 @@ To protect this data we must prohibit access to unwanted persons with a password
 
 When choosing a password, the number of charaters defines the securety level ,the longer it is , the harder it will be to fin dit with decryption software.Generally it is advised that they hold a minimum of 8 characters and must contain a capital letter , a number and a special character in order to complicate the task for a potential hacker.Any password such as date of birth or name is strongly discouraged . The most important thing, however, is to remember.
 
-# Second step : Proctect your computer from attack
+## Proctect your computer from attack
 
 Once you are working on your computer you will have to use tools such as hard disks or even USB keys to either copy data or make external backups. Hackers also know this and some go through them to reach you by introducing computer viruses to either destroy your important files or recover sensitive data.
 In order to protect yourself against these attacks there are specific software called antivirus which analyzes the data entering the machine and detect potential threats. It is therefore necessary to have one with a license preferably to benefit from optimal protection. The most used are Norton or McAfee.
 Once the antivirus is installed it is good practice to scan before use any device that connects to the computer first and to update the antcuivirus regularly.
 
-# Third step : Good practice in internet browsing
+## Good practice in internet browsing
 
 ## VPN
 
